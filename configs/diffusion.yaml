@@ -1,0 +1,29 @@
+# Data & I/O
+batch_size: 320
+data_path: ./data/tabula_muris.h5ad
+
+# Model architecture
+
+hidden_dim: 512
+time_emb_dim: 128
+label_emb_dim: 128
+num_res_blocks: 6
+
+# Training
+lr: 0.001
+max_epochs: 1000
+patience: 20
+
+# Diffusion schedule
+num_timesteps: 1000
+schedule_type: linear
+beta_start: 0.0001
+beta_end: 0.02
+
+# Prior settings (for log‐normal)
+log_prior_mu: 0.0
+log_prior_sigma: 1.0
+clip_std: 4.0
+
+# Runtime
+device: cuda

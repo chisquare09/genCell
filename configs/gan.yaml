@@ -1,0 +1,16 @@
+# Data & I/O
+batch_size: 320
+data_path: ./data/tabula_muris.h5ad
+
+# Model architecture
+latent_dim: 128       
+label_emb_dim: 64     
+hidden_dim: 128       
+
+# Training
+epochs: 1000
+lr: 0.001
+betas: [0.5, 0.999]
+
+# Runtime
+device: cuda
